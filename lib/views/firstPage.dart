@@ -19,25 +19,8 @@ class FirstPageState extends State<FirstPage> {
 
   @override
   Widget build(BuildContext context) {
-    return new Row(
-      children: [
-        new Container(
-          padding: new EdgeInsets.all(0.0),
-          child: new IconButton(
-              icon: (_isFa
-                  ? new Icon(Icons.star)
-                  : new Icon(Icons.star_border)),
-              color: Colors.red[500],
-              onPressed: _toggleFavorite,
-          ),
-        ),
-        new SizedBox(
-          width: 18.0,
-          child: new Container(
-          child: new Text('11'),
-          ),
-        ),
-      ]
+    return new Scaffold(
+      body: new OthersPage()
     );
   }
 
